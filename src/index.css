@@ -59,7 +59,8 @@ html {
     box-sizing: border-box;
 }
 
-.buttons, .toggleTheme{
+.buttons,
+.toggleTheme {
     margin: 10%;
     text-align: center;
 }
