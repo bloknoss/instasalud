@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Styling/index.css";
 import InstaSaludNavbar from "./Components/Navbar";
+
+
 import LoginModal from "./Components/LoginModal";
 
 function App() {
