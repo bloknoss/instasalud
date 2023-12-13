@@ -16,7 +16,15 @@ export function ToggleTheme() {
 
     return (
         <>
-            <DarkModeSwitch className="toggleTheme" checked={theme == "dark"} onChange={toggleTheme} size={30} />
+            <div className="toggleTheme">
+                <DarkModeSwitch
+                    checked={theme == "dark"}
+                    sunColor="white"
+                    moonColor="black"
+                    onChange={toggleTheme}
+                    size={30}
+                />
+            </div>
         </>
     );
 }

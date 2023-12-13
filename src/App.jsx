@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./index.css";
+import "./Styling/index.css";
 import InstaSaludNavbar from "./Components/Navbar";
 import LoginModal from "./Components/LoginModal";
 

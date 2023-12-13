@@ -38,11 +38,21 @@ html {
     border-color: black !important;
     background-color: #7ebc80;
 }
+.container{
+
+    justify-content: space-between;
+}
 
 .navbar-btn:hover {
     color: #fff;
     background-color: #337ab7 !important;
     border-color: #2e6da4 !important;
+    width: 0px;
+}
+
+.navbar-collapse .collapse #basic-navbar-nav{
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .btn-primary {
@@ -61,13 +71,20 @@ html {
 
 .buttons,
 .toggleTheme {
-    margin: 10%;
+    margin:10px;
     text-align: center;
 }
 
+.navbar-collapse {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    justify-content: space-evenly !important;
+}
+
 .btn-hover {
-    width: 135px;
+    min-width: 8em;
     font-size: 16px;
+    max-width: 100%;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -96,16 +113,39 @@ html {
     outline: none;
 }
 
-.btn-hover.color-5 {
+.btn-hover {
     background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    box-shadow: 10 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
+.collapse{
+    padding: 0px !important;
+    margin-right: 0px !important;
+}
 .me-auto {
     margin-top: 2px;
     line-height: 1em;
+    margin: 0px !important;
+    padding-right: 0px !important;
+    max-width: 100%;
+}
+
+.toggleTheme svg {
+    align-items: center;
 }
 
 .logo img {
-    width: 5em;
+    align-items: center;
+    width: 3em;
+    transition: transform 350ms;
+}
+
+.logo img:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media only screen and (max-width: 00px) {
+    .btn-hover {
+        width: 100%;
+    }
 }

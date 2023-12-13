@@ -6,7 +6,7 @@ import Modal from "react-bootstrap/Modal";
 function LoginModal({visible, handleClose}) {
     return (
         <>
-            <Modal  show={visible} onHide={handleClose}>
+            <Modal show={visible} onHide={handleClose}>
                 <Modal.Header className="modal-title general-background" closeButton>
                     <Modal.Title>Iniciar Sesión</Modal.Title>
                 </Modal.Header>
