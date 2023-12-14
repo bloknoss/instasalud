@@ -1,17 +1,29 @@
-import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./Styling/index.css";
+import "./Styling/App.css";
+
 import InstaSaludNavbar from "./Components/Navbar";
 
+import Container from "react-bootstrap/Container";
 
-import LoginModal from "./Components/LoginModal";
+import Inicio from "./Pages/Landing";
+import Management from "./Pages/Management";
+import Especialidades from "./Pages/Specialties";
+import Especialistas from "./Pages/Specialists";
+import SalaCitas from "./Pages/Appointments";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
-        <>
-            <InstaSaludNavbar></InstaSaludNavbar>
-        </>
+        <Router>
+            <InstaSaludNavbar />
+            <Routes>
+                <Route path="/" exact element={<Inicio />} />
+                <Route path="/especialidades" element={<Especialidades />} />
+                <Route path="/especialistas" element={<Especialistas />} />
+                <Route path="/gestion" element={<Management />} />
+                <Route path="/citas" element={<SalaCitas />} />
+            </Routes>
+        </Router>
     );
 }
 

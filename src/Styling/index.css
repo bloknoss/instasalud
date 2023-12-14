@@ -7,12 +7,12 @@ html {
 .navbar {
     font-size: large;
     font-weight: bold;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 15px 10px 15px 3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .general-background,
 .dropdown-menu {
-    background-color: #4caf50 !important;
+    background-color: #23CE6B !important;
 }
 
 .dropdown-item:hover {
@@ -20,12 +20,12 @@ html {
 }
 
 .modal-title {
-    background-color: #4caf50 !important;
+    background-color: #23CE6B !important;
     border-bottom: none;
 }
 
 .modal-body {
-    background-color: #4caf50 !important;
+    background-color: #23CE6B !important;
     border-top: none;
 }
 
@@ -114,7 +114,7 @@ html {
 }
 
 .btn-hover {
-    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    background-image: linear-gradient(to right, #4caf50, #3cba92, #30dd8a, #2bb673);
     box-shadow: 10 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 

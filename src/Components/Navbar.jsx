@@ -9,6 +9,7 @@ import InstaSaludIcon from "../assets/logo-removebg-preview.png";
 import ToggleTheme from "./ToggleTheme";
 import LoginModal from "./LoginModal";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function InstaSaludNavbar() {
     const [show, setShow] = useState(false);
@@ -25,29 +26,46 @@ function InstaSaludNavbar() {
             <LoginModal visible={show} handleClose={handleModalHide}></LoginModal>
             <Navbar expand="lg" className="bg-body-tertiary general-background">
                 <Container>
-                    <Navbar.Brand className="logo" href="#home">
-                        <img src={InstaSaludIcon} />
-                    </Navbar.Brand>
+                    <Link to="/">
+                        <Navbar.Brand className="logo" href="#home">
+                            <img src={InstaSaludIcon} />
+                        </Navbar.Brand>
+                    </Link>
+
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <button className="btn-hover color-5" href="#home">
-                                Inicio
-                            </button>
-                            <button className="btn-hover color-5" href="#home">
-                                Especialidades
-                            </button>
-                            <button className="btn-hover color-5" href="#home">
-                                Especialistas
-                            </button>
-                            <button className="btn-hover color-5" href="#home">
-                                Gestión de Citas
-                            </button>
-                            <button className="btn-hover color-5" href="#home">
-                                Sala de Citas
-                            </button>
+                            <Link to="/">
+                                <button className="btn-hover color-5" href="#home">
+                                    Inicio
+                                </button>
+                            </Link>
+
+                            <Link to="/especialidades">
+                                <button className="btn-hover color-5" href="#home">
+                                    Especialidades
+                                </button>
+                            </Link>
+
+                            <Link to="/especialistas">
+                                <button className="btn-hover color-5" href="#home">
+                                    Especialistas
+                                </button>
+                            </Link>
+
+                            <Link to="/gestion">
+                                <button className="btn-hover color-5" href="#home">
+                                    Gestión de Citas
+                                </button>
+                            </Link>
+
+                            <Link to="/citas">
+                                <button className="btn-hover color-5" href="#home">
+                                    Sala de Citas
+                                </button>
+                            </Link>
                         </Nav>
-                            <ToggleTheme></ToggleTheme>
+                        <ToggleTheme></ToggleTheme>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

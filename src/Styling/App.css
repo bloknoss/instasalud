@@ -1,0 +1,92 @@
+body{
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    box-sizing: border-box;
+}
+h1,h4,h2,h3 {
+    font-weight: 800;
+
+}
+
+.typewriter {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    width: fit-content;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.disp{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+}
+
+.disp p{
+    min-width: 20em;
+}
+
+.img-disp{
+    width: fit-content;
+    height: 40em;
+}
+
+.img-disp img{
+    max-width: fit-content;
+}
+
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 2s steps(60, end), blink-caret 0.75s step-end infinite;
+}
+
+.carousel img{
+    margin-top: 2em;
+    width: 100%;
+    min-height: 50vh;
+    max-height: 50vh;
+    margin-bottom: 5em;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 19em;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .typewriter {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+}
