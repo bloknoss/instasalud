@@ -1,8 +1,9 @@
+
 import "./Styles/Specialties.css";
 import "./Styles/SResponsive.css";
 
 import Container from "react-bootstrap/Container";
-import CartaEspecialista from "../Components/Card";
+import CartaEspecialidad from "../Components/SpecialtyCard";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 
@@ -60,13 +61,13 @@ function Especialidades() {
                 <Container className="specialists-container mt-5 d-flex gap-4 flex-wrap">
                     {Especialidades.map((especialidad, i) => {
                         return (
-                            <CartaEspecialista
+                            <CartaEspecialidad
                                 key={i}
                                 nombre={especialidad["especialidad"]}
                                 imagen={especialidad["imagen"]}
                                 descripcion={especialidad["descripcion"]}
                                 url={especialidad["url"]}
-                            ></CartaEspecialista>
+                            ></CartaEspecialidad>
                         );
                     })}
                 </Container>

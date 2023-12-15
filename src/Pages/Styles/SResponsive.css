@@ -1,14 +1,22 @@
 @media only screen and (max-width: 1200px) {
     .specialists-container {
-        background-color: aliceblue;
-        display: flex;
         width: fit-content;
-        flex-wrap: nowrap;
+        border-radius: 20px;
+        display: flex;
+         flex-wrap: nowrap;
         flex-direction: column;
         flex-basis: 0%;
     }
+
+
     .card{
-        max-width: 100%;
+        background-color: aliceblue;
+
+        min-width: 20em;
+    }
+
+    .cardImg {
+        min-width: 75%;
     }
 
 }

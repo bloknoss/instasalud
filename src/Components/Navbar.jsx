@@ -26,7 +26,7 @@ function InstaSaludNavbar() {
             <LoginModal visible={show} handleClose={handleModalHide}></LoginModal>
             <Navbar expand="lg" className="bg-body-tertiary general-background">
                 <Container>
-                    <Link to="/">
+                    <Link to="/instasalud/">
                         <Navbar.Brand className="logo" href="#home">
                             <img src={InstaSaludIcon} />
                         </Navbar.Brand>
@@ -35,31 +35,31 @@ function InstaSaludNavbar() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Link to="/">
+                            <Link to="/instasalud/">
                                 <button className="btn-hover color-5" href="#home">
                                     Inicio
                                 </button>
                             </Link>
 
-                            <Link to="/especialidades">
+                            <Link to="/instasalud/especialidades">
                                 <button className="btn-hover color-5" href="#home">
                                     Especialidades
                                 </button>
                             </Link>
 
-                            <Link to="/especialistas">
+                            <Link to="/instasalud/especialistas">
                                 <button className="btn-hover color-5" href="#home">
                                     Especialistas
                                 </button>
                             </Link>
 
-                            <Link to="/gestion">
+                            <Link to="/instasalud/gestion">
                                 <button className="btn-hover color-5" href="#home">
                                     Gestión de Citas
                                 </button>
                             </Link>
 
-                            <Link to="/citas">
+                            <Link to="/instasalud/citas">
                                 <button className="btn-hover color-5" href="#home">
                                     Sala de Citas
                                 </button>
