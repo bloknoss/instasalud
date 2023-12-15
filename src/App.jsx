@@ -18,11 +18,11 @@ function App() {
         <Router>
             <InstaSaludNavbar />
             <Routes>
-                <Route path="/" exact element={<Inicio />} />
-                <Route path="/especialidades" element={<Especialidades />} />
-                <Route path="/especialistas" element={<Especialistas />} />
-                <Route path="/gestion" element={<Management />} />
-                <Route path="/citas" element={<SalaCitas />} />
+                <Route path="/instasalud/" exact element={<Inicio />} />
+                <Route path="/instasalud/especialidades" element={<Especialidades />} />
+                <Route path="/instasalud/especialistas" element={<Especialistas />} />
+                <Route path="/instasalud/gestion" element={<Management />} />
+                <Route path="/instasalud/citas" element={<SalaCitas />} />
             </Routes>
             <Footer/>
         </Router>
