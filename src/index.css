@@ -144,8 +144,8 @@ html {
     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-@media only screen and (max-width: 00px) {
+@media only screen and (max-width: 1000px) {
     .btn-hover {
-        width: 100%;
+        width: 90%;
     }
 }

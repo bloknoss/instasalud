@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./Styling/index.css";
-import "./Styling/App.css";
+import "./index.css";
+import "./App.css";
 
 import InstaSaludNavbar from "./Components/Navbar";
 
@@ -11,6 +11,7 @@ import Management from "./Pages/Management";
 import Especialidades from "./Pages/Specialties";
 import Especialistas from "./Pages/Specialists";
 import SalaCitas from "./Pages/Appointments";
+import Footer from "./Components/Footer";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/gestion" element={<Management />} />
                 <Route path="/citas" element={<SalaCitas />} />
             </Routes>
+            <Footer></Footer>
         </Router>
     );
 }

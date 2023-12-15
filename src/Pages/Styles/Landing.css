@@ -1,3 +1,4 @@
+
 body{
     background-size: cover;
 }
@@ -53,6 +54,10 @@ h1,h4,h2,h3 {
     min-height: 50vh;
     max-height: 50vh;
     margin-bottom: 5em;
+}
+
+.disp:first img{
+    width: 50px;
 }
 
 /* The typing effect */
