@@ -24,7 +24,7 @@ function App() {
                 <Route path="/gestion" element={<Management />} />
                 <Route path="/citas" element={<SalaCitas />} />
             </Routes>
-            <Footer></Footer>
+            <Footer/>
         </Router>
     );
 }

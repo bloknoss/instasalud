@@ -1,0 +1,38 @@
+.specialists-container {
+    flex-basis: 33.33333% !important;
+    max-width: 60em;
+}
+
+
+.card {
+
+    height: fit-content;
+    background-color: whitesmoke;
+    max-width: 33.33333%;
+    border-radius: 20px;
+    align-items: center;
+    color: black;
+}
+
+.card-title{
+    color: #313338;
+    font-weight: bold;
+}
+
+
+
+.card button {
+    background-color: green;
+    font-size: small;
+    width: 90%;
+    border-radius: 5px !important;
+
+}
+
+
+.card-img-top  {
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+}
+

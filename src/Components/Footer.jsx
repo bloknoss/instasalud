@@ -2,7 +2,7 @@ import { Facebook, Twitter, Google, Instagram, Linkedin, Github } from "react-bo
 
 function Footer() {
     return (
-        <footer className="mt-5 position-relative text-center text-lg-start "  style={{fontWeight: "600", backgroundColor: "#23CE6B" }}>
+        <footer className="mt-5 position-relative text-center text-lg-start text-black "  style={{fontWeight: "600", backgroundColor: "#23CE6B" }}>
             <section className="d-flex justify-content-between p-4" style={{ backgroundColor: "#006e1b" }}>
                 <div className="me-5">
                     <span>Encuentranos en las redes sociales:</span>
@@ -50,7 +50,7 @@ function Footer() {
                             <h6 className="text-uppercase fw-bold">Servicios</h6>
                             <hr
                                 className="mb-4 mt-0 d-inline-block mx-auto"
-                                style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }}
+                                style={{ width: "60px", backgroundColor: "#249856", height: "2px" }}
                             />
                             <p>
                                 <a href="#!" className="">
