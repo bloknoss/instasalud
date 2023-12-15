@@ -12,7 +12,7 @@
     .card{
         background-color: aliceblue;
 
-        min-width: 20em;
+        min-width: fit-content;
     }
 
     .cardImg {

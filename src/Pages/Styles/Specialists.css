@@ -23,11 +23,13 @@
 
 }
 
+
+
 .card button {
     background-color: green;
     font-size: small;
     width: 90%;
-    border-radius: 100px !important;
+    border-radius: 10px !important;
     
 }
 
