@@ -24,3 +24,7 @@
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
+
+.body{
+  min-height: 30em !important;  
+}

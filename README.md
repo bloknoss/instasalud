@@ -31,10 +31,10 @@ He procurado que con todo lo que he ido haciendo hasta este momento, haya sido r
   
 # ¿Qué falta?
 Actualmente me faltan las siguientes cosas por implementar (en un fúturo, simplemente mejoraré):
-- Gestion de Citas
+- Gestion de Citas (En progreso)
 - Sala de Citas
 - ~~Inicio de Sesión~~ / Registro
-- Terminos de Servicio
+- ~~Terminos de Servicio~~
 
 # Página Web
 [InstaSalud](https://bloknoss.github.io/instasalud/) - Enlace a la página web
@@ -45,4 +45,4 @@ En caso de que salte un error, simplemente abre denuevo la página (disculpa por
 # Conclusión
 Seguiré trabajando en la página web ya que estoy disfrutando bastante del proceso y para el segundo trimestre intentaré hacer las cosas con más tiempo.  
   
-  En caso de que sea necesario hacer algún cambio o exista alguna duda o similares, puedes contactar a mi correo electronico acarrod0209@g.educaand.es
+En caso de que sea necesario hacer algún cambio o exista alguna duda o similares, puedes contactar a mi correo electronico acarrod0209@g.educaand.es

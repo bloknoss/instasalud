@@ -1,0 +1,22 @@
+
+.tos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tos-container h2:first-child{
+    font-weight: 800;
+}
+.tos-container h2{
+
+    font-weight: 390;
+    margin-top: 10px;
+    
+}
+
+.tos-container p, .tos-container a{
+    margin-top: 5px;
+    letter-spacing: 2px;
+    text-align: justify;
+}

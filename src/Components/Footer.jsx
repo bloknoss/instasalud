@@ -1,8 +1,12 @@
 import { Facebook, Twitter, Google, Instagram, Linkedin, Github } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="mt-5 position-relative text-center text-lg-start text-black "  style={{fontWeight: "600", backgroundColor: "#23CE6B" }}>
+        <footer
+            className="mt-4 position-relative text-center text-lg-start text-black "
+            style={{ fontWeight: "600", backgroundColor: "#23CE6B" }}
+        >
             <section className="d-flex justify-content-between p-4" style={{ backgroundColor: "#006e1b" }}>
                 <div className="me-5">
                     <span>Encuentranos en las redes sociales:</span>
@@ -81,24 +85,32 @@ function Footer() {
                                 style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }}
                             />
                             <p>
-                                <a href="#!" className="">
-                                    Tu Cuenta
-                                </a>
+                                <Link to="/instasalud/login">
+                                    <a href="#!" className="">
+                                        Tu Cuenta
+                                    </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href="#!" className="">
-                                    Gestion de Citas
-                                </a>
+                                <Link to="/instasalud/gestion/">
+                                    <a href="#!" className="">
+                                        Gestion de Citas
+                                    </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href="#!" className="">
-                                    Sala de Citas
-                                </a>
+                                <Link to="/instasalud/citas">
+                                    <a href="#!" className="">
+                                        Sala de Citas
+                                    </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href="#!" className="">
-                                    Terminos de Servicio
-                                </a>
+                                <Link to="/instasalud/tos">
+                                    <a href="#!" className="">
+                                        Terminos de Servicio
+                                    </a>
+                                </Link>
                             </p>
                         </div>
 
@@ -125,9 +137,9 @@ function Footer() {
                 </div>
             </section>
 
-            <div className="text-center p-3" style={{fontWeight:"200",  backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
+            <div className="text-center p-3" style={{ fontWeight: "200", backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
                 <a className="text-black" target="_blank" href="https://github.com/bloknoss/">
-                © 2023 Copyright Álvaro Carabante Rodríguez
+                    © 2023 Copyright Álvaro Carabante Rodríguez
                 </a>
             </div>
         </footer>
