@@ -1,0 +1,23 @@
+
+@media only screen and (max-width: 1200px) {
+    .typewriter {
+        max-width: 100%;
+        white-space: normal;
+    }
+
+    .disp{
+        flex-direction: column;
+        img {
+            width: 80%;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+}

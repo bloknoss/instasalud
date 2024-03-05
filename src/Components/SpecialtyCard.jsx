@@ -1,4 +1,3 @@
-import "../Pages/Styles/Specialties.css";
 
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";

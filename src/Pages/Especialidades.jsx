@@ -1,7 +1,4 @@
 
-import "./Styles/Specialties.css";
-import "./Styles/SResponsive.css";
-
 import Container from "react-bootstrap/Container";
 import CartaEspecialidad from "../Components/SpecialtyCard";
 import ListGroup from "react-bootstrap/ListGroup";

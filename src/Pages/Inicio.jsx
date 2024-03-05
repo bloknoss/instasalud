@@ -1,6 +1,4 @@
 import "photoswipe/dist/photoswipe.css";
-import "./Styles/Landing.css";
-import "./Styles/LResponsive.css";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel";
 import EspecialistaImage from "../assets/Drawkit-Vector-Illustration-Medical/SVG/Drawkit-Vector-Illustration-Medical-05.svg";

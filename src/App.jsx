@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./index.css";
-import "./App.css";
+import "./Pages/Styles/sass/index.css";
 
 import InstaSaludNavbar from "./Components/Navbar";
-
 import Container from "react-bootstrap/Container";
 
 import Inicio from "./Pages/Inicio";
@@ -16,23 +14,23 @@ import Footer from "./Components/Footer";
 import ToS from "./Pages/ToS";
 
 function App() {
-    return (
-        <Router>
-            <InstaSaludNavbar />
-            <Container className="body">
-                <Routes>
-                    <Route path="/instasalud/" exact element={<Inicio />} />
-                    <Route path="/instasalud/especialidades" element={<Especialidades />} />
-                    <Route path="/instasalud/especialistas" element={<Especialistas />} />
-                    <Route path="/instasalud/gestion" element={<Management />} />
-                    <Route path="/instasalud/citas" element={<SalaCitas />} />
-                    <Route path="/instasalud/tos" element={<ToS />} />
-                    <Route path="/instasalud/login" element={<LoginForm />} />
-                </Routes>
-            </Container>
-            <Footer />
-        </Router>
-    );
+  return (
+    <Router>
+      <InstaSaludNavbar />
+      <Container className="body">
+        <Routes>
+          <Route path="/instasalud/" exact element={<Inicio />} />
+          <Route path="/instasalud/especialidades" element={<Especialidades />} />
+          <Route path="/instasalud/especialistas" element={<Especialistas />} />
+          <Route path="/instasalud/gestion" element={<Management />} />
+          <Route path="/instasalud/citas" element={<SalaCitas />} />
+          <Route path="/instasalud/tos" element={<ToS />} />
+          <Route path="/instasalud/login" element={<LoginForm />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
+  );
 }
 
 export default App;

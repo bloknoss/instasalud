@@ -1,44 +1,37 @@
 .specialists-container {
-    flex-basis: 33.33333% !important;
-    max-width: 60em;
+  flex-basis: 33.33333% !important;
+  max-width: 60em;
 }
 
 .card {
-    
-    height: fit-content;
-    background-color: whitesmoke;
-    max-width: 33.33333%;
-    border-radius: 20px;
-    align-items: center;
-    color: black;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: whitesmoke;
+  max-width: 33.33333%;
+  border-radius: 20px;
+  align-items: center;
+  color: black;
 }
 
-.card-title{
-    color: #313338;
-    font-weight: bold;
+.card-title {
+  color: #313338;
+  font-weight: bold;
 }
 
 .card-specialist {
-    border-radius: 5000px;
-
+  border-radius: 5000px;
 }
-
-
 
 .card button {
-    background-color: green;
-    font-size: small;
-    width: 90%;
-    border-radius: 10px !important;
-    
+  background-color: green;
+  font-size: small;
+  width: 90%;
+  border-radius: 10px !important;
 }
 
-
-.card-img-top  {
-    align-items: center;
-    justify-content: center;
-    width: 10em !important;
-    border-radius: 10;
-}
-
-
+.card-img-top {
+  align-items: center;
+  justify-content: center;
+  width: 10em !important;
+  border-radius: 10;
+}/*# sourceMappingURL=Specialists.css.map */

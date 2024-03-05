@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import './Styles/ToS.css'
 
 export default function ToS() {
     return (
