@@ -12,6 +12,7 @@ import SalaCitas from "./Pages/Appointments";
 import LoginForm from "./Pages/Login";
 import Footer from "./Components/Footer";
 import ToS from "./Pages/ToS";
+import Resenas from "./Pages/Resenas";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/instasalud/citas" element={<SalaCitas />} />
           <Route path="/instasalud/tos" element={<ToS />} />
           <Route path="/instasalud/login" element={<LoginForm />} />
+          <Route path="/instasalud/resenas" element={<Resenas />} />
         </Routes>
       </Container>
       <Footer />

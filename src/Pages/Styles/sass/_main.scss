@@ -4,6 +4,28 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+.modal {
+  color: black !important;
+
+  .modal-title {
+    text-align: center;
+  }
+
+  .modal-dialog {
+    top: 20%;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    input {
+      border-color: black !important;
+    }
+  }
+}
+
+.btn-cancel {
+  background-image: linear-gradient(to right, #dc143c, #c51e3a, #e0115f, #c80815) !important;
+}
+
 .navbar {
   font-size: large;
   font-weight: bold;
@@ -12,7 +34,7 @@ html {
 
 .general-background,
 .dropdown-menu {
-  background-color: #23ce6b !important;
+  background-color: $main-green !important;
 }
 
 .dropdown-item:hover {
@@ -20,12 +42,12 @@ html {
 }
 
 .modal-title {
-  background-color: #23ce6b !important;
-  border-bottom: none;
+  background-color: $main-green !important;
+  border-color: black;
 }
 
 .modal-body {
-  background-color: #23ce6b !important;
+  background-color: $main-green !important;
   border-top: none;
 
   input {
@@ -34,9 +56,22 @@ html {
   }
 }
 
+footer {
+  background-color: $main-green;
+  a{
+    color: #2e6da4;
+  }
+  section:nth-child(1){
+    background-color: $footer-color !important;
+  }
+  section:nth-child(2){
+    border-bottom: #2bb673 1px solid;
+  }
+}
+
 .modal-footer {
   border-color: black !important;
-  background-color: #7ebc80;
+  background-color: #7ebc80 !important;
 }
 
 .container {
@@ -56,7 +91,7 @@ html {
 }
 
 .btn-primary {
-  border-color: #ae142a;
+  border-color: $btn-primary;
   text-transform: uppercase;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -129,6 +164,38 @@ html {
   max-width: 100%;
 }
 
+.btn-login {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  place-items: center;
+  background: $secondary-green;
+  padding: 1.4em;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.5s;
+
+  &:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.3),
+      -0.5px -0.5px 0px rgba(255, 255, 255, 0.3), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+  }
+
+  &:hover svg {
+    fill: #333333;
+  }
+
+  svg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+  }
+}
+
 .toggleTheme svg {
   align-items: center;
 }
@@ -150,3 +217,4 @@ html {
     width: 90%;
   }
 }
+

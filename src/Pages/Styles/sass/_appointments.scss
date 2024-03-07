@@ -1,0 +1,32 @@
+.call-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: $main-green;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #2bac47;
+  }
+}
+
+.hang-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: none;
+  background-color: #ff2849;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #e52441;
+  }
+}
+

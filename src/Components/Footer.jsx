@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer
             className="mt-4 position-relative text-center text-lg-start text-black "
-            style={{ fontWeight: "600", backgroundColor: "#23CE6B" }}
+            style={{ fontWeight: "600", backgroundColor: "$main-green" }}
         >
             <section className="d-flex justify-content-between p-4" style={{ backgroundColor: "#006e1b" }}>
                 <div className="me-5">

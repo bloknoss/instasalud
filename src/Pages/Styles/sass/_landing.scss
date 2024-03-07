@@ -13,8 +13,16 @@ h3 {
   font-weight: 800;
 }
 
+.carousel {
+  .carousel-inner {
+    span {
+      background-color: black !important;
+    }
+  }
+}
+
 .typewriter {
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  background: -webkit-linear-gradient(45deg, $typewriter-grad-1, $typewriter-grad-2 80%);
   -webkit-background-clip: text;
   width: fit-content;
   -webkit-text-fill-color: transparent;
@@ -26,7 +34,13 @@ h3 {
   max-width: 100%;
   align-items: center;
 
+  .textos {
+    display: flex;
+    flex-direction: column;
+  }
+
   p {
+    letter-spacing: 1px;
     min-width: 20em;
   }
 
@@ -37,18 +51,18 @@ h3 {
 
 .img-disp {
   width: fit-content;
-  height: 40em;
+  height: 30em;
   img {
     max-width: fit-content;
   }
 }
 
 .typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typewriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   animation: typing 2s steps(60, end), blink-caret 0.75s step-end infinite;
 }
 
@@ -62,7 +76,6 @@ h3 {
   }
 }
 
-/* The typing effect */
 @keyframes typing {
   from {
     width: 0;
@@ -95,5 +108,26 @@ h3 {
     to {
       width: 100%;
     }
+  }
+}
+
+/* player */
+
+#player-button {
+  margin-top: 30px;
+  border: none !important;
+  background-color: rgba(0, 0,0,0) !important;
+}
+
+.play {
+  animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
