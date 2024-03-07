@@ -1,52 +1,82 @@
-.container{
-  form{
-
-    select{
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      align-self: center;
-      width: 10px;
+.container {
+    form {
+        gap: 30px !important;
+        select {
+            position: relative;
+            margin-top: 25px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            align-self: center;
+            width: 300px;
+        }
     }
-  }
 }
 
+.square-container {
+    display: flex;
+    gap: 35px;
+    flex-direction: row;
+    margin-top: 55px;
+    margin-bottom: 45px;
+    .call-square {
+        background-color: #1e2124;
+        width: 40rem;
+        border-radius: 25px;
+        border: 1px $main-green solid;
+        height: 35rem;
+        img{
+          margin-top: 35%;
+          width: 50px;
+        }
+    }
+}
 
+.gestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-.gestion{
-  text-align:left;
-  justify-content: left;
+    button {
+        position: relative;
+        justify-self: center;
+        margin: 0;
+        width: 60%;
+    }
+}
+
+.info-texts {
+    justify-content: left;
 }
 
 .call-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  border: none;
-  background-color: $main-green;
-  transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    background-color: $main-green;
+    transition: 0.5s;
 
-  &:hover {
-    background-color: #2bac47;
-  }
+    &:hover {
+        background-color: #2bac47;
+    }
 }
 
 .hang-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  border: none;
-  background-color: #ff2849;
-  transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    background-color: #ff2849;
+    transition: 0.5s;
 
-  &:hover {
-    background-color: #e52441;
-  }
+    &:hover {
+        background-color: #e52441;
+    }
 }
-

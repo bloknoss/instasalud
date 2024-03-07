@@ -172,6 +172,17 @@ h3 {
     min-width: -moz-fit-content;
     min-width: fit-content;
   }
+  .square-container {
+    display: flex;
+    flex-direction: column !important;
+    margin-right: 5px;
+  }
+  .square-container .square-title {
+    text-align: center;
+  }
+  .square-container .square-title .call-square {
+    width: 85vw !important;
+  }
   .cardImg {
     min-width: 75%;
   }
@@ -501,16 +512,51 @@ footer section:nth-child(2) {
   text-align: justify;
 }
 
+.container form {
+  gap: 30px !important;
+}
 .container form select {
+  position: relative;
+  margin-top: 25px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   align-self: center;
-  width: 10px;
+  width: 300px;
+}
+
+.square-container {
+  display: flex;
+  gap: 35px;
+  flex-direction: row;
+  margin-top: 55px;
+  margin-bottom: 45px;
+}
+.square-container .call-square {
+  background-color: #1e2124;
+  width: 40rem;
+  border-radius: 25px;
+  border: 1px #23ce6b solid;
+  height: 35rem;
+}
+.square-container .call-square img {
+  margin-top: 35%;
+  width: 50px;
 }
 
 .gestion {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.gestion button {
+  position: relative;
+  justify-self: center;
+  margin: 0;
+  width: 60%;
+}
+
+.info-texts {
   justify-content: left;
 }
 
