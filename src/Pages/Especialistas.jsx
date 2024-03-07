@@ -27,10 +27,10 @@ function Especialistas() {
             url: "/instasalud/especialistas",
         },
         {
-            nombre: "Dr. Ignacio Romero Meynet",
+            nombre: "Dr. Ignacio Romero",
             especialidad: "Ginecología",
             descripcion:
-                "Experiencia profesional de más de 20 años tanto en la sanidad pública como privada. Actualmente desarrollo mi labor profesional como ginecólogo...",
+                "Experiencia profesional de más de 20 años tanto en la sanidad pública como privada. Actualmente desarrollo mis habilidades",
             imagen: "https://s3-eu-west-1.amazonaws.com/doctoralia.es/doctor/d6bfcf/d6bfcf979b88c3119e79f804999fb67d_large.jpg",
             url: "/instasalud/especialistas",
         },
@@ -45,7 +45,7 @@ function Especialistas() {
             nombre: "Dr. Fernando Ruiz Ortega ",
             especialidad: "Médico General",
             descripcion:
-                "Me gusta considerarme Médico Generalista (Omnipracticien) porque considero que una parte de mi labor es orientar a los pacientes. No sólo para mejorar...",
+                "Me gusta considerarme Médico Generalista (Omnipracticien) porque considero que una parte de mi labor es orientar a los pacientes.",
             imagen: "https://s3-eu-west-1.amazonaws.com/doctoralia.es/doctor/ab2c04/ab2c0412392d09b8ca0ba9b132734a4e_large.jpg",
             url: "/instasalud/especialistas",
         },
@@ -53,7 +53,7 @@ function Especialistas() {
 
     return (
         <>
-            <Container className="mt-5">
+            <Container className="test-container mt-5">
                 <h3>Especialistas</h3>
                 <p className="font-weight-lighter">
                     Aquí podrás observar los distintos especialistas que disponemos actualmente. <br /> Garantizamos un servicio excelente

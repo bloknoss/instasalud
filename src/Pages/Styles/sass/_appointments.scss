@@ -1,3 +1,23 @@
+.container{
+  form{
+
+    select{
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      align-self: center;
+      width: 10px;
+    }
+  }
+}
+
+
+
+.gestion{
+  text-align:left;
+  justify-content: left;
+}
+
 .call-btn {
   display: flex;
   justify-content: center;

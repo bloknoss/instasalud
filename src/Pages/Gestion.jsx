@@ -9,17 +9,18 @@ function Management() {
                 <h2>Gestión de Citas</h2>
                 <Container className=" d-flex">
                     <Container>
-                        <Form>
-                            <Form.Group className="mb-3">
+                        <Form className="gestion">
+                            <Form.Group className=" mb-3">
                                 <h4>Información Personal</h4>
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Label>DNI: </Form.Label>
                             </Form.Group>
 
                             <Form.Group className="mb-3">
                                 <Form.Label>Nombre: </Form.Label>
                             </Form.Group>
-                            <Form.Group className="mb-3">
-                                <Form.Label>DNI: </Form.Label>
-                            </Form.Group>
+
 
                             <Form.Group className="mb-3">
                                 <Form.Label>Ultima Consulta: </Form.Label>
@@ -49,7 +50,6 @@ function Management() {
                             <Form.Group className="mb-3">
                                 <Form.Label>Especialidad: </Form.Label>
                             </Form.Group>
-
                                 <Button className="w-50 btn-hover rounded">Modificar Cita</Button>
                                 <Button className="w-50 btn-hover rounded">Cancelar Cita</Button>
                         </Form>
